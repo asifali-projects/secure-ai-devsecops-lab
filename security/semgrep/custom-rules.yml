@@ -1,0 +1,7 @@
+rules:
+  - id: dangerous-eval
+    pattern: eval(...)
+    message: "Avoid eval() because it can execute attacker-controlled Python code."
+    severity: ERROR
+    languages:
+      - python
